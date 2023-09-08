@@ -1,0 +1,82 @@
+.findjob {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.findjob h1 {
+    padding: 0.5rem;
+}
+
+.findjob h3 {
+    font-size: 30px;
+}
+
+.six-card-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+  
+.card {
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(249, 220, 4);
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(33.33% - 15px); /* Adjust the width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .7s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-icon {
+    flex: 0 0 40px; /* Adjust the icon width */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+  
+.findjob h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+  
+.findjob p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 940px) {
+    .findjob-container {
+        --num-cols: 6;
+        --row-height: 200px;
+        --grap: .5rem
+    }
+
+    .card {
+      display: block;
+      width: auto;
+      padding: 50px;
+    }
+
+    .card-icon {
+      flex: 0 0 30px; /* Adjust the icon width */
+      font-size: 1rem;
+      margin-right: 5px;
+  }
+
+  .card-content h2 {
+      font-size: 1rem;
+      margin: 0;
+  }
+    
+  .card-content p {
+      margin: 15px 15px;
+  }
+
+}
